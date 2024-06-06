@@ -46,6 +46,28 @@
     background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
 }
 
+.logo{
+
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+
+}
+
+.logo:hover{
+
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+
+}
+
+
 
 nav{
     width: 100%;
@@ -60,7 +82,7 @@ nav{
 nav .logo{
     width: 60px;
     margin: 2vh;
-    margin-left: 8%;
+    margin-left: 3%;
 }
 
 nav ul li{
