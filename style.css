@@ -1,5 +1,5 @@
 
-/* - UNIVERSAL CSS STYLE FOR THE WHOLE WEBPAGE ENTIRLY - */
+/* -------------------------------------- UNIVERSAL CSS STYLE's FOR THE WHOLE WEBPAGE ENTIRLY -------------------------- */
 
 *{
     padding:0;
@@ -14,31 +14,9 @@
 /* - - - - - - - - - - - - - - - - - - - - - - */
 
 
-/* ================================================================================== */
-/* ================================ - START - ======================================= */
-
-
-/* Home page */
-
-.banner{
-    width:100%;
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover; /* ensure that the video would cover the banner with any ratio of the screen*/
-    width: 100%;
-    height: 100%;
-   
-}
-
-.content{
+/*- NAVIGATION PANE -*/
+ 
+.NAVcontent{
     position: relative;
     z-index: 1;
     width: 100%;
@@ -46,7 +24,7 @@
     background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
 }
 
-.logo{
+.logIn{
 
     color: white;
     font-size: 18px;
@@ -58,7 +36,7 @@
 
 }
 
-.logo:hover{
+.logIn:hover{
 
     background: white;
     color: black;
@@ -66,8 +44,6 @@
     border-radius: 5px;
 
 }
-
-
 
 nav{
     width: 100%;
@@ -79,7 +55,7 @@ nav{
     justify-content: space-between;
 }
 
-nav .logo{
+nav .logIn{
     width: 60px;
     margin: 2vh;
     margin-left: 3%;
@@ -118,6 +94,115 @@ nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Footer */
+
+.footer{
+    margin-top: 80px;
+    background-color: rgb(21, 74, 74);
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: white;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+.social a{
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    color: rgb(21, 74, 74);
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
+
+/*----------------------------------------------END OF GENERAL CSS STYLE'S -------------------------------------*/
+
+
+/*===============================================================================================================*/
+
+
+
+
+
+/*===================================================- PAGES -===================================================*/
+
+
+/*=================================================- INDEX.HTML -================================================*/
+
+
+.banner{
+    width:100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* ensure that the video would cover the banner with any ratio of the screen*/
+    width: 100%;
+    height: 100%;
+   
 }
 
 .title{
@@ -162,6 +247,8 @@ nav ul li a{
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
     padding: 10px 30px;
 }
+
+
 
 /* Services */
 
@@ -228,13 +315,6 @@ nav ul li a{
 }
 
 
-/* ================================================================================== */
-
-
-
-
-/* ================================ - START - ======================================= */
-
 /* Locations */
 
 .location-content{
@@ -282,10 +362,6 @@ nav ul li a{
     transform: scale(1.03);
     
 }
-
-
-/* ================================ - END - ========================================= */
-
 
 
 /* Packages */
@@ -360,15 +436,6 @@ nav ul li a{
 }
 
 
-/* ================================ - END - ========================================= */
-
-
-
-/* ================================================================================== */
-
-
-
-/* ================================ - START - ======================================= */
 
 /* Newsletter */
 
@@ -428,224 +495,35 @@ nav ul li a{
     color: rgb(21, 74, 74);
 }
 
-/* ================================ - END - ========================================= */
-
-
-/* ================================================================================== */
 
 
 
-/* ================================ - START - ======================================= */
+/* ====================================- LOGIN.HTML -=============================================== */
 
-/* Footer */
-
-.footer{
-    margin-top: 80px;
-    background-color: rgb(21, 74, 74);
-}
-
-.foot{
-    padding: 20px 0;
-}
-
-.footer-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-
-.footlinks h4{
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-
-.footlinks h4::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 70px;
-    left: 0;
-    bottom: -7px;
-    background: white;
-}
-
-.footlinks ul li{
-    margin-bottom: 15px;
-}
-
-.footlinks ul li a{
-    font-size: 17px;
-    color: #dddddd;
-    display: block;
-    transition: ease 0.30s;
-}
-
-.footlinks ul li a:hover{
-    transform: translate(6px);
-    color: white;
-}
-
-.social a{
-    font-size: 25px;
-    margin: 4px;
-    height: 40px;
-    width: 40px;
-    color: rgb(21, 74, 74);
-    background-color: white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    transition: ease 0.30s;
-}
-
-.social a:hover{
-    transform: scale(1.2);
-}
-
-
-
-/* ================================ - END - ========================================= */
-
-
-/* ================================================================================== */
-
-
-
-/* ================================ - START - ======================================= */
-
-/* About Us */
-
-.aboutbody{
-    background-color: #191919;
-}
-
-.about{
-    width: 100%;
-    padding: 78px 0px;
-}
-
-.about img{
-    height: auto;
-    width: 400px;
-}
-
-.abt-text{
-    width: 500px;
-}
-
-.abt-text h1{
-    font-size: 70px;
-    color: white;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-.abt-text h1 span{
-    color: #fc0050;
-    letter-spacing: 1px;
-}
-
-.abt-text p{
-    color: white;
-    font-size: 24px;
-    margin-bottom: 45px;
-    line-height: 30px;
-    letter-spacing: 1px;
-}
-
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.connectbtn{
-    display: inline-block;
-    background-color: #fc0050;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: ease 0.4s;
-    border: 2px solid transparent;
-    letter-spacing: 1px;
-}
-
-.connectbtn:hover{
-    background-color: transparent;
-    border: 2px solid #fc0050;
-    transform: scale(1.1);
-}
-
-.connect-section{
-    margin-top: 26px;
-}
-
-
-.social-icons a{
-    height: 40px;
-    width: 40px;
-    margin: 4px;
-    font-size: 30px;
-    color: #101010;
-    background-color: white;
-    border-radius: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: ease 0.30s;
-}
-
-.social-icons a:hover{
-    transform: scale(1.2);
-}
-
-/* ================================ - END - ========================================= */
-
-
-/* ================================================================================== */
-
-
-
-/* ================================ - START - ======================================= */
-
-/* Contact Us */
-
-.contactbody{
+.logInbody{
     background-color: #101010;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
-.contact{
+.logInSECTION{
     padding: 110px 30%;
     height: 100%;
     min-height: 100vh;
 }
 
-.contact-form h1{
+.logging-form h1{
     font-size: 80px;
     color: white;
     margin-bottom: 20px;
 }
 
-.contact-form h1 span{
+.logging-form h1 span{
     color:#fc0050;
 }
 
-.contact-form p{
+.logging-form p{
     color: white;
     line-height: 30px;
     letter-spacing: 1px;
@@ -654,7 +532,7 @@ nav ul li a{
 }
 
 
-.contact-form form input,form textarea{
+.logging-form form input,form textarea{
     width: 100%;
     padding: 17px;
     border: none;
@@ -666,7 +544,7 @@ nav ul li a{
     border-radius: 10px;
 }
 
-.contact-form form .submit-btn{
+.logging-form form .submit-btn{
     display: inline-block;
     background-color: #fc0050;
     font-size: 27px;
@@ -678,26 +556,17 @@ nav ul li a{
 
 }
 
-.contact-form form .submit-btn:hover{
+.logging-form form .submit-btn:hover{
     border: 2px solid #fc0050;
     background-color: transparent;
     transform: scale(1.1);
 
 }
 
-/* ================================ - END - ========================================= */
 
 
 
-/* ================================================================================== */
-
-
-
-
-/* ================================ - START - ======================================= */
-
-
-/* Registration Form */
+/* ================================- REGISTER.HTML -================================ */
 
 .register-body{
     background-color: #101010;
@@ -764,6 +633,10 @@ nav ul li a{
 }
 
 
+
+
+/*=============================================- LOCATION.HTML -==================================*/
+
 .location-body{
     background-color: #191919;
     color: white;
@@ -804,4 +677,94 @@ nav ul li a{
     margin-bottom: 30px;
 }
 
-/* ================================ - END - ========================================= */
+
+
+/* =======================================- ABOUT.HTML -======================================== */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.Aboutmain{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.connectbtn{
+    display: inline-block;
+    background-color: #fc0050;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: ease 0.4s;
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+}
+
+.connectbtn:hover{
+    background-color: transparent;
+    border: 2px solid #fc0050;
+    transform: scale(1.1);
+}
+
+.connect-section{
+    margin-top: 26px;
+}
+
+.social-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    font-size: 30px;
+    color: #101010;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.30s;
+}
+
+.social-icons a:hover{
+    transform: scale(1.2);
+}

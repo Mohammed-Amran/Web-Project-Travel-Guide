@@ -5,143 +5,138 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Here</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <title>Register Here</title>
   
-    <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" type="text/css" href="style.css">
    
-    <!--== - THIS LINK BELOW IS RESPONSIBLE FOR SPECIAL FONT-FAMILY STYLES AND WEIGHTS FROM GOOGLE-FONTS - ==-->
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+       <!--== - THIS LINK BELOW IS RESPONSIBLE FOR SPECIAL FONT-FAMILY STYLES AND WEIGHTS FROM GOOGLE-FONTS - ==-->
+      <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!--== - THIS LINK BELOW IS RESPONSIBLE FOR ICONS, SUCH AS THE MAIL ICON - ==-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <!--== - THIS LINK BELOW IS RESPONSIBLE FOR ICONS, SUCH AS THE MAIL ICON - ==-->
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-</head>
+    </head>
 
 
-<body class="register-body">
+    <body class="register-body">
 
-    <nav>
-        <a href="logIn.html" class="logo">Login</a>
+        <nav>
 
-        <ul class="navbar">
+          <a href="logIn.html" class="logIn">Login</a>
+
+            <ul class="navbar">
             
-            <li>
+              <li>
                 <a href="index.html">Home</a>
                 <a href="index.html#locations">Locations</a>
                 <a href="index.html#package">Packages</a>
                 <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </li>
-        </ul>
+              </li>
 
-    </nav>
+            </ul>
 
-    <section class="registration">
-        <div class="register-form">
-            <h1>Register <span>Here</span></h1>
+        </nav>
+   
+        <section class="registration">
 
+            <div class="register-form">
 
-            <form action="" >
+              <h1>Register <span>Here</span></h1>
 
-                    <input type="text" name="myname1" placeholder="Name" id="name" required>
-                    <input type="email" name="myemail" placeholder="Email-Id" id="" required>
-                    <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
-                    <input type="number" name="myage" placeholder="Age" id="" required>
+               <br>
 
-             <!---------------------------------------------------------------------------------------------->
+               <p>If you have <span style="color: #fc0050;"> Registered </span> already, <span> <a href="logIn.html" style="color: #fc0050;"> Log in </a> </span> </p>
 
-                    <h4>Gender</h4>
-                    <input type="radio" name="mygender" id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    <input type="radio" name="mygender" id=""> Female
+              <br>
 
-             <!---------------------------------------------------------------------------------------------->
+                <form action="#"  onsubmit="return getBack()">
 
-                    <h4>Departure</h4>
-                    <input type="datetime-local" name="departuredate" id="" required>
-                    <h4>Return</h4>
-                    <input type="datetime-local" name="returndate" id="" required>
+                    <input type="text" name="myname1" placeholder="Name"  required>
+                    <input type="email" name="myemail" placeholder="Email-Id"  required>
+                    <input type="tel" name="myphone" placeholder="Phone No."  required>
+                    <input type="number" name="myage" placeholder="Age"  required>
 
-             <!--------------------------------------------------------------------------------------------->
+                    <!---------------------------------------------------------------------------------------------->
 
-            
-               <h4>Travel Destination</h4>
-               <input type="checkbox" name="td" id=""> Sulaymaniyah &nbsp; &nbsp; &nbsp;
-               <input type="checkbox" name="td" id=""> Bursa &nbsp; &nbsp; &nbsp;
-               <input type="checkbox" name="td" id=""> Shiraz &nbsp; &nbsp; &nbsp;
-               <input type="checkbox" name="td" id=""> Jordan &nbsp; &nbsp; &nbsp;
-               <input type="checkbox" name="td" id=""> Baku &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            
-             <!--------------------------------------------------------------------------------------------->
+                    <h4>Gender</h4> <br>
+                    <input type="radio" name="mygender"  required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <input type="radio" name="mygender" required> Female
 
-                <br> <br>
+                   <!--------------------------------------------------------------------------------------------->
 
-                <h4>Package</h4>
-                <input type="radio" name="locations" id="loc1" required> Bronze &nbsp; &nbsp; &nbsp;
-                <input type="radio" name="locations" id="loc1"> Silver &nbsp; &nbsp; &nbsp;
-                <input type="radio" name="locations" id="loc1"> Gold &nbsp; &nbsp; &nbsp;
-                <input type="radio" name="locations" id="loc1"> Platinum &nbsp; &nbsp; &nbsp;
+                    <br> <br><br>
 
-                <br> <br> 
+                   <input type="submit" value="Submit" class="submitbtn">
 
-             <!----------------------------------------------------------------------------------------------->
+                   <!----------------------------------------------------------------------------------------------->            
 
-
-                <input type="checkbox" name="tANDc" id="" checked required> I accept the Terms & Conditions.
-                <br> <br> 
-                <input type="submit" value="Submit" class="submitbtn">
-
-              <!----------------------------------------------------------------------------------------------->            
-
-            </form>
-
-        </div>
-
-    </section>
-
-<!-- Footer -->
-
-<section class="footer">
-
-    <div class="foot">
-        
-        <div class="footer-content">
-            
-            <div class="footlinks">
-
-                <h4>Quick Links</h4>
-
-                <ul>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+                </form>
 
             </div>
 
+        </section>
 
-            <div class="footlinks">
+       <!-- JAVA SCRIPT CODE, TO HANDLE ONE FUNCTIOANLITY    -->
 
-                <h4>Connect</h4>
+        <script>
 
-                <div class="social">
+           function getBack(){
+        
+            window.location.href = "index.html";
+
+            return false; }
+        
+        </script>
+
+
+       <!-- Footer -->
+
+        <section class="footer">
+
+            <div class="foot">
+        
+                <div class="footer-content">
+            
+                    <div class="footlinks">
+
+                        <h4>Quick Links</h4>
+
+                        <ul>
+
+                          <li><a href="register.html">Register</a></li>
+                          <li><a href="about.html">About Us</a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footlinks">
+
+                       <h4>Connect</h4>
+   
+                        <div class="social">
                    
-                  <a href="mailto:travelguide880@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
+                           <a href="mailto:travelguide880@gmail.com" target="blank"> <i class='bx bxs-envelope'></i> </a>
 
+                        </div>
+
+                    </div>
+            
                 </div>
 
             </div>
-            
-        </div>
-    </div>
 
    
-</section>
+        </section>
 
 
 
-</body>
+    </body>
+
 </html>
