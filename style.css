@@ -16,86 +16,71 @@
 
 /*- NAVIGATION PANE -*/
  
-.NAVcontent{
+.NAVcontent {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3), rgba(4, 1, 17, 0.3));
 }
 
-.logIn{
-
-    color: white;
-    font-size: 18px;
-    padding: 10px 22px;
-    border-radius: 4px;
-    font-weight: 500;   
-    text-decoration: none;
-    transition: ease 0.40s;
-
-}
-
-.logIn:hover{
-
-    background: white;
-    color: black;
-    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
-    border-radius: 5px;
-
-}
-
-nav{
+nav {
     width: 100%;
     position: fixed;
     background-color: rgb(21, 74, 74);
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0; /* Adjusted padding to increase height */
+    height: 80px; /* Adjusted height of the nav bar */
 }
 
-nav .logIn{
+nav .logIn {
     width: 60px;
     margin: 2vh;
     margin-left: 3%;
 }
 
-nav ul li{
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
     list-style: none;
-    display: inline-block;
     margin-left: 40px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     margin-right: 4vh;
 }
 
-.navbar a{
+.navbar a {
     color: white;
     font-size: 18px;
     padding: 10px 22px;
     border-radius: 4px;
-    font-weight: 500;   
+    font-weight: 500;
     text-decoration: none;
     transition: ease 0.40s;
 }
 
-.navbar a:hover,.navbar a.active{
+.navbar a:hover, .navbar a.active {
     background: white;
     color: black;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
     border-radius: 5px;
-    
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
 }
-
 
 /*--------------------------------------*/
 
@@ -498,73 +483,6 @@ nav ul li a{
 
 
 
-/* ====================================- LOGIN.HTML -=============================================== */
-
-.logInbody{
-    background-color: #101010;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-.logInSECTION{
-    padding: 110px 30%;
-    height: 100%;
-    min-height: 100vh;
-}
-
-.logging-form h1{
-    font-size: 80px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.logging-form h1 span{
-    color:#fc0050;
-}
-
-.logging-form p{
-    color: white;
-    line-height: 30px;
-    letter-spacing: 1px;
-    font-size: 23px;
-    margin-bottom: 20px;
-}
-
-
-.logging-form form input,form textarea{
-    width: 100%;
-    padding: 17px;
-    border: none;
-    outline: none;
-    background-color: #191919;
-    font-size: 20px;
-    color: white;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.logging-form form .submit-btn{
-    display: inline-block;
-    background-color: #fc0050;
-    font-size: 27px;
-    font-weight: 600px;
-    border: 2px solid transparent;
-    border-radius: 40px;
-    width: 220px;
-    transition: ease 0.30s;
-
-}
-
-.logging-form form .submit-btn:hover{
-    border: 2px solid #fc0050;
-    background-color: transparent;
-    transform: scale(1.1);
-
-}
-
-
-
 
 /* ================================- REGISTER.HTML -================================ */
 
@@ -676,6 +594,34 @@ nav ul li a{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* =======================================- PACKAGES.HTML -======================================== */
+
+.PackNAVcontent{
+
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
+}
+
+.Packlocation-body{
+
+    background-color: #191919;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

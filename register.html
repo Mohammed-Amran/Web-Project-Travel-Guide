@@ -25,16 +25,16 @@
 
     <body class="register-body">
 
-        <nav>
+        <nav style="height: 30px;">
 
-          <a href="logIn.html" class="logIn">Login</a>
+          
 
             <ul class="navbar">
             
               <li>
                 <a href="index.html">Home</a>
                 <a href="index.html#locations">Locations</a>
-                <a href="index.html#package">Packages</a>
+                <a href="check.html">Packages</a>
                 <a href="about.html">About Us</a>
               </li>
 
@@ -50,11 +50,11 @@
 
                <br>
 
-               <p>If you have <span style="color: #fc0050;"> Registered </span> already, <span> <a href="logIn.html" style="color: #fc0050;"> Log in </a> </span> </p>
+               <p>If you have <span style="color: #fc0050;"> Registered </span> already, <span> <a href="check.html" style="color: #fc0050;"> choose your Package </a> </span> </p>
 
               <br>
 
-                <form action="#"  onsubmit="return getBack()">
+                <form action="register.php" method="post" >
 
                     <input type="text" name="myname1" placeholder="Name"  required>
                     <input type="email" name="myemail" placeholder="Email-Id"  required>
